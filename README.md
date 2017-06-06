@@ -1,36 +1,19 @@
-# Simple Weather 2.0
+# IUIC TEST PROJECT
 
-This simple application need to view the weather in any city of the world. 
-The app is delivering to the user the following information requested by the city:
+Согласно поставленной задаче было сделанно:
 
-* **The temperature at the moment**
-* **The maximum temperature during the day**
-* **The minimum temperature during the day**
-* **Humidity**
-* **Pressure**
-* **Wind Speed**
-* **Weather condition**
-* **Visualization Weather condition in each cases**
-* **Meteorological station from which data were obtained**
+2. На карте, показывая погоду над населенным пунктом (в отдельных случаях районах населенного пункта) группирую пины по мере отдаления карты.
 
-Also the user have 2 variants to search weather in the city:
-* **write the name of the city in text field**
-* **tap on the map and select the appropriate city in a new window**
+* **Получаем погоду с помощью API через интернет**
+* **Имеем 2 варианта поиска:**
+* **1) через PickerView выбираем страну и далее в таблице получаем список городов которые находятся в данной стране, далее выбираем нужный город из таблицы и получаем погоду с подробной информацией в данном регионе**
+* **2) через TextField сразу пишем интересующий нас город, и получаем погоду с подробной информацией**
+* **Строки в таблице можно удалять по свайпу**
 
-During writing the application code we used:
-* **CocoaPods**
-* **AFNetworking**
-* **Mapkit**
-* **Custom Pin**
-* **Gestures**
-* **Parcing Request**
-* **Protocol\Delegate Construction**
-* **Visualization Weather condition**
+Так же было предусмотренно:
 
-The speed and stability of the application to crash was maximized.
+* **Отсутсвие или наличие связи с интернетом**
+* **Обрыв связи во время выполнения запроса**
+* **Предоставленна информация о типе подключения к сети**
 
-**K.S.**
-
--![alt screen 1](https://raw.githubusercontent.com/KonstantinSt77/TOP_SimpleWeather/master/icon%20simple%20weather/screenshots/Weather1.jpg)
--![alt screen 2](https://raw.githubusercontent.com/KonstantinSt77/TOP_SimpleWeather/master/icon%20simple%20weather/screenshots/Weather2.jpg)
-
+**С Уважением, K.S.**

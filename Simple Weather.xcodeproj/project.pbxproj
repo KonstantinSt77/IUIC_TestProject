@@ -128,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8B2FA10C1EE5DCAD00469A1C /* StandartFile */,
+				8B719F5A1EE72FC2002AC529 /* TabelVC */,
 				8B2FA10A1EE5DC7B00469A1C /* StartVC */,
 				8B2FA1091EE5DC4900469A1C /* WeatherVC */,
 				8B2FA10B1EE5DC9700469A1C /* MapVC */,
@@ -178,8 +179,6 @@
 			children = (
 				8B2FA1021EE5CF5300469A1C /* SWViewController.h */,
 				8B2FA1031EE5CF5300469A1C /* SWViewController.m */,
-				8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */,
-				8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */,
 			);
 			name = StartVC;
 			sourceTree = "<group>";
@@ -196,15 +195,24 @@
 		8B2FA10C1EE5DCAD00469A1C /* StandartFile */ = {
 			isa = PBXGroup;
 			children = (
-				8B2FA1101EE5E35400469A1C /* Reachability.h */,
-				8B2FA1111EE5E35400469A1C /* Reachability.m */,
-				8B1C5F631C26A3DB00BE5854 /* Info.plist */,
-				8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */,
-				8B2FA1071EE5D0E500469A1C /* countriesToCities.json */,
 				8B1C5F551C26A3DB00BE5854 /* AppDelegate.h */,
 				8B1C5F561C26A3DB00BE5854 /* AppDelegate.m */,
+				8B2FA1101EE5E35400469A1C /* Reachability.h */,
+				8B2FA1111EE5E35400469A1C /* Reachability.m */,
+				8B2FA1071EE5D0E500469A1C /* countriesToCities.json */,
+				8B1C5F631C26A3DB00BE5854 /* Info.plist */,
+				8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */,
 			);
 			name = StandartFile;
+			sourceTree = "<group>";
+		};
+		8B719F5A1EE72FC2002AC529 /* TabelVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */,
+				8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */,
+			);
+			name = TabelVC;
 			sourceTree = "<group>";
 		};
 		CD8FE269FC35B2821739FC03 /* Pods */ = {

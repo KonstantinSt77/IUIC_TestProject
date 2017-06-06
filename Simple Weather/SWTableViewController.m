@@ -17,23 +17,21 @@
 
 @implementation SWTableViewController
 
-
-
 - (void)viewDidLoad
 {
     NSLog(@"Полученный от picker- %@",self.passNumber);
     [super viewDidLoad];
     [self doSomethingWithTheJson];
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
     
 }
-
 
 - (void)doSomethingWithTheJson
 {
     
     NSDictionary *dict = [self JSONFromFile];
-    
-    self.myArray2 = [dict objectForKey:self.passNumber];
+     self.myArray2 = [[dict objectForKey:self.passNumber] mutableCopy];
+    //self.myArray2 = [dict objectForKey:self.passNumber];
     
 }
 
@@ -43,8 +41,6 @@
     NSData *data = [NSData dataWithContentsOfFile:path];
     return [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 }
-
-
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -99,6 +95,21 @@
     }
     
     
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //remove the deleted object from your data source.
+        //If your data source is an NSMutableArray, do this
+        //[self.myArray2 removeObjectAtIndex:indexPath.row];
+        [self.myArray2 removeObjectAtIndex:indexPath.row];
+        [tableView reloadData]; // tell table to refresh now
+    }
 }
 
 @end

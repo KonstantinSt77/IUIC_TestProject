@@ -2,8 +2,8 @@
 //  ViewController.m
 //  Simple Weather
 //
-//  Created by Kostya on 20.12.15.
-//  Copyright © 2015 Stolyarenko K.S. All rights reserved.
+//  Created by Kostya on 05.06.17.
+//  Copyright © 2017 Stolyarenko K.S. All rights reserved.
 //
 #import "SWMainViewController.h"
 
