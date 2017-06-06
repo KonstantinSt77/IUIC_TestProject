@@ -276,7 +276,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="map"/>
                                 <connections>
-                                    <segue destination="TWg-bi-SP0" kind="show" id="347-15-48V"/>
+                                    <segue destination="TWg-bi-SP0" kind="show" identifier="showMap" id="nl1-c7-bUg"/>
                                 </connections>
                             </button>
                         </subviews>

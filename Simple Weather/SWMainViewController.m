@@ -40,14 +40,32 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
     self.name.text = self.passCity;
     [super viewDidLoad];
     [self search];
+    }
+
+- (IBAction)showMap{
+    
+    [self performSegueWithIdentifier:@"showMap" sender:self.passCity];
+
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"showMap"])
+    {
+        SWMapViewController *mapVC = [segue destinationViewController];
+        mapVC.mapPassCity = self.passCity;
+    }
+    else
+    {
+        [segue.destinationViewController setDelegate:self];
+    }
     
 }
+
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender {
-    [segue.destinationViewController setDelegate:self];
-}
+
 -(void)search
 {
     

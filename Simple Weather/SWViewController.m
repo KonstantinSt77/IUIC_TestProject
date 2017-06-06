@@ -30,9 +30,6 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     self.pik.delegate = self;
     self.pik.dataSource = self;
     [self doSomethingWithTheJson];
-    
-    
-    
 }
 
 -(void) viewWillAppear:(BOOL)animated

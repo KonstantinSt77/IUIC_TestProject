@@ -8,6 +8,7 @@ target 'Simple Weather' do
     platform :ios, '8.0'
     
     pod 'AFNetworking', '~> 3.0'
+
 end
 
 target 'Simple WeatherTests' do
