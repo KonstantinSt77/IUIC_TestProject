@@ -27,6 +27,9 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
 @property (strong, nonatomic) IBOutlet UIImageView *snow;
 @property (strong, nonatomic) IBOutlet UIImageView *fog;
 @property (strong, nonatomic) IBOutlet UIImageView *drizzle;
+@property (strong, nonatomic) NSString *passCityWithTemperature;
+
+
 @end
 
 @implementation SWMainViewController
@@ -36,24 +39,20 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
     
-    NSLog(@"Полученный %@",self.passCity);
+    NSLog(@"Полученный на основную форму %@",self.passCity);
     self.name.text = self.passCity;
     [super viewDidLoad];
     [self search];
-    }
-
-- (IBAction)showMap{
     
-    [self performSegueWithIdentifier:@"showMap" sender:self.passCity];
-
-}
+    }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"showMap"])
     {
         SWMapViewController *mapVC = [segue destinationViewController];
-        mapVC.mapPassCity = self.passCity;
+        mapVC.mapPassCity = self.passCityWithTemperature;
+        mapVC.mapCoordinateForCity = self.ServerMapCoordinateForCity;
     }
     else
     {
@@ -116,6 +115,19 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         NSString *nameCity = weatherDictionary[@"name"];
         self.cityNameLabel.text = nameCity;
         
+        NSDictionary *coordDictionary = weatherDictionary[@"coord"];
+     
+        NSString *coordLatString = coordDictionary[@"lat"];
+        NSString *coordLonString = coordDictionary[@"lon"];
+        
+        NSInteger coordLon = [coordLonString intValue];
+        NSInteger coordLat = [coordLatString intValue];
+        
+        CLLocationCoordinate2D a;
+        a.longitude = coordLon;
+        a.latitude = coordLat;
+        self.ServerMapCoordinateForCity = a;
+        
         NSDictionary *mainDictionary = weatherDictionary[@"main"];
         
         NSString *temperatureString = mainDictionary[@"temp"];
@@ -151,6 +163,8 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         NSDictionary *status = statusesWeather[0];
         NSString *weatherstatusString = status[@"main"];
         self.weatherstatus.text = weatherstatusString;
+        
+        self.passCityWithTemperature = [NSString stringWithFormat:@"%@ %@%@", self.passCity, self.temperatureLabel.text, @"°C"];
         
         //configurate images
         if ([weatherstatusString isEqualToString:@"Clouds"])

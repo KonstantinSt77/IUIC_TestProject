@@ -12,16 +12,18 @@
 
 @implementation SWMapViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    CLLocationCoordinate2D mapCoordinate111;
-    mapCoordinate111.latitude = 42;
-    mapCoordinate111.longitude = 32;
-    [self showWeather:mapCoordinate111];
-
+    [self showWeather:self.mapCoordinateForCity];
+    [self.mapView setCenterCoordinate:self.mapCoordinateForCity animated:YES];
+    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(self.mapCoordinateForCity, 400000, 400000);
+    [self.mapView setRegion:viewRegion];
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
     MKAnnotationView *annView=(MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"annotation"];
     if (annView==nil) {
         annView=[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annotation"];
@@ -32,12 +34,12 @@
     annView.image = image;
     [annView setFrame:CGRectMake(0, 0, 50, 50)];
     annView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    annView.centerOffset = CGPointMake(0,-25);
+    annView.centerOffset = CGPointMake(0,0);
     return annView;
 }
 
-//- (IBAction)tapMap:(UILongPressGestureRecognizer *)sender {
-//
+- (IBAction)tapMap:(UILongPressGestureRecognizer *)sender {
+
 //        if (sender.state == UIGestureRecognizerStateEnded)
 //        {
 //            CGPoint point = [sender locationInView:self.mapView];
@@ -54,7 +56,7 @@
 //        {
 //
 //        }
-//}
+}
 
 - (void)showWeather:(CLLocationCoordinate2D)mapCoordinate
 {

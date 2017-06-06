@@ -20,4 +20,5 @@
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSString *mapPassCity;
+@property (nonatomic, assign) CLLocationCoordinate2D mapCoordinateForCity;
 @end
