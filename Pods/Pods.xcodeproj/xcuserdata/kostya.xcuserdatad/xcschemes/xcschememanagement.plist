@@ -6,33 +6,43 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-Simple Weather.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>RESideMenu.xcscheme</key>
+		<key>Pods-Simple WeatherTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Simple WeatherUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6F2D19EAC4A4EC5F7474322590F0E47A</key>
+		<key>66F2C33B76AAD90D7F73BE8F70A12AA9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>8CD5F2C9BEDD571DE87E17E4D9591885</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C96569052ACF446B7720791F6FA4D97</key>
+		<key>92ABC561AE0399D0713AE023FCEECF5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

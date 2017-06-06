@@ -60,10 +60,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abn-ns-XXG">
-                                <rect key="frame" x="300" y="349" width="83" height="21"/>
+                                <rect key="frame" x="300" y="349" width="142" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8VJ-z4-uPt"/>
-                                    <constraint firstAttribute="width" constant="83" id="OS4-lD-tWh"/>
+                                    <constraint firstAttribute="width" constant="142" id="OS4-lD-tWh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
                                 <color key="textColor" red="0.3009100978" green="0.60192338729999995" blue="0.96452649109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -301,7 +301,7 @@
                             <constraint firstItem="JYw-iQ-mfH" firstAttribute="top" secondItem="K9r-9B-zlW" secondAttribute="bottom" constant="16" id="Fd0-eP-RVt"/>
                             <constraint firstItem="K9r-9B-zlW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FtB-hx-LBZ"/>
                             <constraint firstItem="U0G-tj-0Yl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="G5E-CR-qH8"/>
-                            <constraint firstItem="abn-ns-XXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="41.5" id="G5z-b8-3Z4"/>
+                            <constraint firstItem="abn-ns-XXG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="71" id="G5z-b8-3Z4"/>
                             <constraint firstItem="m5k-UV-0rO" firstAttribute="top" secondItem="hL6-ZW-2Ft" secondAttribute="bottom" constant="16" id="GHL-JV-ruN"/>
                             <constraint firstItem="m5k-UV-0rO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="48.5" id="Hpf-SU-0xz"/>
                             <constraint firstItem="XfL-Yu-A8V" firstAttribute="top" secondItem="YhY-R7-YH3" secondAttribute="bottom" constant="1" id="IiM-Jm-Akd"/>
@@ -457,6 +457,12 @@
                                 <color key="textColor" red="0.30091009777999267" green="0.60192338734429496" blue="0.96452649111675126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-3s-b7n">
+                                <rect key="frame" x="0.0" y="102" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="ban-xz-Ykf"/>
+                                </constraints>
+                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы так же можете ввести город с клавиатуры" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54c-9E-lIW">
                                 <rect key="frame" x="194" y="298" width="213" height="60"/>
                                 <constraints>
@@ -465,6 +471,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.3009100978" green="0.60192338729999995" blue="0.96452649109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="сатус" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-qy-c7s">
+                                <rect key="frame" x="171" y="425" width="258" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="0Q0-Nb-ZCV"/>
+                                    <constraint firstAttribute="width" constant="258" id="MfX-zN-MoU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.23921568630000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Харьков" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oAT-e7-09B">
@@ -479,12 +495,16 @@
                                     <outlet property="delegate" destination="ANj-r9-9pm" id="4Ct-Ou-wv9"/>
                                 </connections>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUm-3s-b7n">
-                                <rect key="frame" x="0.0" y="102" width="600" height="216"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интерент соединение:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOq-pO-Ii4">
+                                <rect key="frame" x="203" y="399" width="194" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="ban-xz-Ykf"/>
+                                    <constraint firstAttribute="height" constant="27" id="fFr-JJ-bzc"/>
+                                    <constraint firstAttribute="width" constant="194" id="oBh-QE-ryf"/>
                                 </constraints>
-                            </pickerView>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.3009100978" green="0.60192338729999995" blue="0.96452649109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600648880005" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -492,9 +512,13 @@
                             <constraint firstItem="54c-9E-lIW" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="3lN-gR-wwV"/>
                             <constraint firstItem="7SF-jc-p7V" firstAttribute="top" secondItem="cET-vc-sMB" secondAttribute="bottom" constant="8" id="DTZ-Ed-PX6"/>
                             <constraint firstItem="oAT-e7-09B" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="FPH-QQ-zOj"/>
+                            <constraint firstItem="Zfm-qy-c7s" firstAttribute="top" secondItem="oAT-e7-09B" secondAttribute="bottom" constant="34" id="FWV-Sn-h3H"/>
                             <constraint firstItem="QUm-3s-b7n" firstAttribute="leading" secondItem="mid-IJ-UUb" secondAttribute="leadingMargin" constant="-20" id="Lk3-lv-QAo"/>
+                            <constraint firstItem="Zfm-qy-c7s" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="N5v-dc-lMX"/>
+                            <constraint firstItem="iOq-pO-Ii4" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="Q4o-wJ-mzV"/>
                             <constraint firstItem="54c-9E-lIW" firstAttribute="top" secondItem="7SF-jc-p7V" secondAttribute="bottom" constant="179" id="QyQ-tX-xwA"/>
                             <constraint firstItem="QUm-3s-b7n" firstAttribute="top" secondItem="7SF-jc-p7V" secondAttribute="bottom" constant="-17" id="bS7-1y-fVC"/>
+                            <constraint firstItem="iOq-pO-Ii4" firstAttribute="top" secondItem="oAT-e7-09B" secondAttribute="bottom" constant="8" id="qKL-TC-QAw"/>
                             <constraint firstItem="oAT-e7-09B" firstAttribute="top" secondItem="54c-9E-lIW" secondAttribute="bottom" constant="3" id="r1h-Yw-5UX"/>
                             <constraint firstItem="QUm-3s-b7n" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="wHq-KX-44v"/>
                             <constraint firstItem="7SF-jc-p7V" firstAttribute="centerX" secondItem="mid-IJ-UUb" secondAttribute="centerX" id="wZo-vM-bhT"/>
@@ -502,6 +526,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Выбор региона" id="zOv-8v-pM4"/>
                     <connections>
+                        <outlet property="internetInfo" destination="Zfm-qy-c7s" id="2W8-9e-dx6"/>
                         <outlet property="pik" destination="QUm-3s-b7n" id="m4k-lD-D07"/>
                         <segue destination="bHE-y2-DVD" kind="show" identifier="start" id="JfH-SF-MWN">
                             <nil key="action"/>
@@ -515,13 +540,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BFOG-1" width="187" height="182"/>
-        <image name="Bclouds-1" width="231" height="222"/>
-        <image name="Bdrizzle-1" width="204" height="202"/>
-        <image name="Brain-1" width="204" height="202"/>
-        <image name="Bsnow-1" width="203" height="198"/>
-        <image name="Bsun-1" width="181" height="177"/>
-        <image name="Bsunclouds-1" width="233" height="225"/>
+        <image name="BFOG-1" width="81" height="80"/>
+        <image name="Bclouds-1" width="80" height="81"/>
+        <image name="Bdrizzle-1" width="80" height="80"/>
+        <image name="Brain-1" width="80" height="81"/>
+        <image name="Bsnow-1" width="79" height="79"/>
+        <image name="Bsun-1" width="80" height="81"/>
+        <image name="Bsunclouds-1" width="81" height="80"/>
         <image name="map" width="2100" height="1313"/>
     </resources>
     <inferredMetricsTieBreakers>

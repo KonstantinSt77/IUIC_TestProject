@@ -37,6 +37,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
                                             withAnimation:UIStatusBarAnimationFade];
     
     NSLog(@"Полученный %@",self.passCity);
+    self.name.text = self.passCity;
     [super viewDidLoad];
     [self search];
     
@@ -62,6 +63,12 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
     [self configurationScreenWithDictionary:json];
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Обрыв связи"
+                                                        message:@"Произошел сбой во время выполнения запроса"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Хорошо."
+                                              otherButtonTitles:nil];
+         [alert show];
     }];
 }
 

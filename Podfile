@@ -8,7 +8,6 @@ target 'Simple Weather' do
     platform :ios, '8.0'
     
     pod 'AFNetworking', '~> 3.0'
-    pod 'RESideMenu', '~> 4.0'
 end
 
 target 'Simple WeatherTests' do

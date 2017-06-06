@@ -6,7 +6,7 @@
 //  Copyright © 2017 Stolyarenko K.S. All rights reserved.
 //
 #import "SWMapViewController.h"
-
+//@import Mapbox;
 @interface SWMapViewController ()<MKMapViewDelegate, CLLocationManagerDelegate>
 @end
 
@@ -14,6 +14,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+//    //
+//    NSURL *styleURL = [MGLStyle lightStyleURLWithVersion:9];
+//    MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:styleURL];
+//    mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    mapView.tintColor = [UIColor darkGrayColor];
+//    
+//    // Set the map‘s bounds to Pisa, Italy.
+//    MGLCoordinateBounds bounds = MGLCoordinateBoundsMake(
+//                                                         CLLocationCoordinate2DMake(43.7115, 10.3725),
+//                                                         CLLocationCoordinate2DMake(43.7318, 10.4222));
+//    [mapView setVisibleCoordinateBounds:bounds];
+//    
+//    [self.view addSubview:mapView];
+//    
+//    // Set the map view‘s delegate property.
+//    mapView.delegate = self;
+//    
+//    // Initialize and add the point annotation.
+//    MGLPointAnnotation *pisa = [[MGLPointAnnotation alloc] init];
+//    pisa.coordinate = CLLocationCoordinate2DMake(43.723, 10.396633);
+//    pisa.title = @"Leaning Tower of Pisa";
+//    [mapView addAnnotation:pisa];
+//    //
+//    
+    
+    
+    
+    
 }
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     MKAnnotationView *annView=(MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"annotation"];

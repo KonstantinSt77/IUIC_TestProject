@@ -17,6 +17,7 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
 @property (weak, nonatomic) IBOutlet UIPickerView *pik;
 @property (weak, nonatomic) NSString *stri;
 @property (weak, nonatomic) NSString *city;
+@property (weak, nonatomic) IBOutlet UILabel *internetInfo;
 @property Reachability* internetReachable;
 @property Reachability* hostReachable;
 @end
@@ -29,6 +30,9 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     self.pik.delegate = self;
     self.pik.dataSource = self;
     [self doSomethingWithTheJson];
+    
+    
+    
 }
 
 -(void) viewWillAppear:(BOOL)animated
@@ -43,13 +47,14 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     _hostReachable = [Reachability reachabilityWithHostName:@"www.apple.com"];
     [_hostReachable startNotifier];
     
-
+    [super viewWillAppear:self];
 }
 
 
 -(void) viewWillDisappear:(BOOL)animated
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [super viewWillDisappear:self];
 }
 
 
@@ -61,25 +66,29 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     {
         case NotReachable:
         {
+            self.internetInfo.text = @"Нет подключения к сети";
             NSLog(@"The internet is down.");
-          
-            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Нет подключения к сети"
+                                                            message:@"В данный момент, Ваше устройство не подключено к сети интернет."
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Хорошо."
+                                                  otherButtonTitles:nil];
+            [alert show];
             break;
         }
         case ReachableViaWiFi:
         {
             NSLog(@"The internet is working via WIFI.");
-           
-            
+            self.internetInfo.text = @"Подключено через WIFI";
             break;
         }
         case ReachableViaWWAN:
         {
             NSLog(@"The internet is working via WWAN.");
-           
-            
+            self.internetInfo.text = @"Подключено через 3G";
             break;
         }
+        
     }
     
 }
