@@ -15,6 +15,10 @@
 		8B1C5F5F1C26A3DB00BE5854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1C5F5E1C26A3DB00BE5854 /* Assets.xcassets */; };
 		8B1C5F6D1C26A3DB00BE5854 /* Simple_WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F6C1C26A3DB00BE5854 /* Simple_WeatherTests.m */; };
 		8B1C5F781C26A3DB00BE5854 /* Simple_WeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F771C26A3DB00BE5854 /* Simple_WeatherUITests.m */; };
+		8B2FA1011EE5CEC800469A1C /* SWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */; };
+		8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1031EE5CF5300469A1C /* SWViewController.m */; };
+		8B2FA1081EE5D0E500469A1C /* countriesToCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B2FA1071EE5D0E500469A1C /* countriesToCities.json */; };
+		8B2FA1121EE5E35400469A1C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1111EE5E35400469A1C /* Reachability.m */; };
 		8B554CCD1C68EF4A0009CC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */; };
 		8B554CCE1C68EF4A0009CC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CCB1C68EF4A0009CC67 /* Main.storyboard */; };
 		C129A03299A5B0E94FF67DDD /* libPods-Simple Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD718221339677F651F0366 /* libPods-Simple Weather.a */; };
@@ -57,6 +61,13 @@
 		8B1C5F731C26A3DB00BE5854 /* Simple WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1C5F771C26A3DB00BE5854 /* Simple_WeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_WeatherUITests.m; sourceTree = "<group>"; };
 		8B1C5F791C26A3DB00BE5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewController.h; sourceTree = "<group>"; };
+		8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewController.m; sourceTree = "<group>"; };
+		8B2FA1021EE5CF5300469A1C /* SWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
+		8B2FA1031EE5CF5300469A1C /* SWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
+		8B2FA1071EE5D0E500469A1C /* countriesToCities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countriesToCities.json; path = "../../test app/countriesToCities.json"; sourceTree = "<group>"; };
+		8B2FA1101EE5E35400469A1C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../../Reachability.h; sourceTree = "<group>"; };
+		8B2FA1111EE5E35400469A1C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../../Reachability.m; sourceTree = "<group>"; };
 		8B554CCA1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		8B554CCC1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		D692C93B60B592322B54EBEB /* Pods-Simple Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Weather/Pods-Simple Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,16 +127,12 @@
 		8B1C5F511C26A3DB00BE5854 /* Simple Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8B1C5F551C26A3DB00BE5854 /* AppDelegate.h */,
-				8B1C5F561C26A3DB00BE5854 /* AppDelegate.m */,
-				8B1C5F581C26A3DB00BE5854 /* SWMainViewController.h */,
-				8B1C5F591C26A3DB00BE5854 /* SWMainViewController.m */,
-				5C4C41E21C6131ED00CAB4EF /* SWMapViewController.h */,
-				5C4C41E31C6131ED00CAB4EF /* SWMapViewController.m */,
-				8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */,
+				8B2FA10C1EE5DCAD00469A1C /* StandartFile */,
+				8B2FA10A1EE5DC7B00469A1C /* StartVC */,
+				8B2FA1091EE5DC4900469A1C /* WeatherVC */,
+				8B2FA10B1EE5DC9700469A1C /* MapVC */,
 				8B554CCB1C68EF4A0009CC67 /* Main.storyboard */,
 				8B1C5F5E1C26A3DB00BE5854 /* Assets.xcassets */,
-				8B1C5F631C26A3DB00BE5854 /* Info.plist */,
 				8B1C5F521C26A3DB00BE5854 /* Supporting Files */,
 			);
 			path = "Simple Weather";
@@ -155,6 +162,49 @@
 				8B1C5F791C26A3DB00BE5854 /* Info.plist */,
 			);
 			path = "Simple WeatherUITests";
+			sourceTree = "<group>";
+		};
+		8B2FA1091EE5DC4900469A1C /* WeatherVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B1C5F581C26A3DB00BE5854 /* SWMainViewController.h */,
+				8B1C5F591C26A3DB00BE5854 /* SWMainViewController.m */,
+			);
+			name = WeatherVC;
+			sourceTree = "<group>";
+		};
+		8B2FA10A1EE5DC7B00469A1C /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
+				8B2FA1021EE5CF5300469A1C /* SWViewController.h */,
+				8B2FA1031EE5CF5300469A1C /* SWViewController.m */,
+				8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */,
+				8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */,
+			);
+			name = StartVC;
+			sourceTree = "<group>";
+		};
+		8B2FA10B1EE5DC9700469A1C /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				5C4C41E21C6131ED00CAB4EF /* SWMapViewController.h */,
+				5C4C41E31C6131ED00CAB4EF /* SWMapViewController.m */,
+			);
+			name = MapVC;
+			sourceTree = "<group>";
+		};
+		8B2FA10C1EE5DCAD00469A1C /* StandartFile */ = {
+			isa = PBXGroup;
+			children = (
+				8B2FA1101EE5E35400469A1C /* Reachability.h */,
+				8B2FA1111EE5E35400469A1C /* Reachability.m */,
+				8B1C5F631C26A3DB00BE5854 /* Info.plist */,
+				8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */,
+				8B2FA1071EE5D0E500469A1C /* countriesToCities.json */,
+				8B1C5F551C26A3DB00BE5854 /* AppDelegate.h */,
+				8B1C5F561C26A3DB00BE5854 /* AppDelegate.m */,
+			);
+			name = StandartFile;
 			sourceTree = "<group>";
 		};
 		CD8FE269FC35B2821739FC03 /* Pods */ = {
@@ -286,6 +336,7 @@
 			files = (
 				8B554CCE1C68EF4A0009CC67 /* Main.storyboard in Resources */,
 				8B1C5F5F1C26A3DB00BE5854 /* Assets.xcassets in Resources */,
+				8B2FA1081EE5D0E500469A1C /* countriesToCities.json in Resources */,
 				8B554CCD1C68EF4A0009CC67 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */,
 				8B1C5F5A1C26A3DB00BE5854 /* SWMainViewController.m in Sources */,
 				8B1C5F571C26A3DB00BE5854 /* AppDelegate.m in Sources */,
+				8B2FA1121EE5E35400469A1C /* Reachability.m in Sources */,
+				8B2FA1011EE5CEC800469A1C /* SWTableViewController.m in Sources */,
 				8B1C5F541C26A3DB00BE5854 /* main.m in Sources */,
 				5C4C41E41C6131ED00CAB4EF /* SWMapViewController.m in Sources */,
 			);

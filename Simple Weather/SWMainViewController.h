@@ -11,6 +11,6 @@
 #import "SWMapViewController.h"
 #import "AFNetworking.h"
 @interface SWMainViewController : UIViewController
-
+@property (strong, nonatomic) NSString *passCity;
 @end
 

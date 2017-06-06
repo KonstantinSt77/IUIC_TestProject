@@ -31,9 +31,15 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
 
 @implementation SWMainViewController
 
-- (void)viewDidLoad {[super viewDidLoad];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
+    
+    NSLog(@"Полученный %@",self.passCity);
+    [super viewDidLoad];
+    [self search];
+    
 }
 - (BOOL)prefersStatusBarHidden {
     return YES;
@@ -41,19 +47,14 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender {
     [segue.destinationViewController setDelegate:self];
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    
-    NSString *userCityName = textField.text;
-    self.name.text = textField.text;
-    userCityName = [userCityName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    textField.text = userCityName;
+-(void)search
+{
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
     
     NSString *urlString = [BasicUrl stringByAppendingString:WeatherCityNameUrl];
-    urlString = [NSString stringWithFormat:urlString, textField.text];
+    urlString = [NSString stringWithFormat:urlString, self.passCity];
     NSURL *url = [NSURL URLWithString:urlString];
 
     [manager GET:url.absoluteString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
@@ -62,8 +63,6 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
     } failure:^(NSURLSessionTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
-    textField.text = nil;
-    return YES;
 }
 
 #pragma Mark Map
