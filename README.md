@@ -1,4 +1,4 @@
-# IUIC TEST PROJECT S-Weather
+# TEST PROJECT: IUIC Weather
 
 **Согласно поставленной задаче:**
 
@@ -14,7 +14,6 @@
 * **На карте отображается отцентрированный выбранный город, с выбранной дальностью, а так же накладывается overlay со статусом текущей погоды в выбранном городе**
 * **По нажатию на погоду отображается название города, а так же температура в градусах Цельсия**
 
-
 **Так же было предусмотренно:**
 
 * **Отсутствие или наличие связи с интернетом**
@@ -23,7 +22,11 @@
 
 **Был разработан User-friendly интерфейс**
 
+![alt text](https://raw.githubusercontent.com/KonstantinSt77/IUIC_TestProject/master/Simple%20Weather/Designe.png)
+![alt text](https://raw.githubusercontent.com/KonstantinSt77/IUIC_TestProject/master/Simple%20Weather/Designe%202.png)
+
+**Срок выполнения: 2 дня**
+
 **Yours sincerely K.S.**
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
