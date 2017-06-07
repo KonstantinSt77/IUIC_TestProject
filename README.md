@@ -1,4 +1,4 @@
-# TEST PROJECT: IUIC Weather
+# TEST PROJECT:  IUIC Weather for iPhone (Objective-C)
 
 **Согласно поставленной задаче:**
 
