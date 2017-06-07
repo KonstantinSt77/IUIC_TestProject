@@ -39,8 +39,13 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
     
-    NSLog(@"Полученный на основную форму %@",self.passCity);
-    self.name.text = self.passCity;
+
+   
+    NSString *userCityName = @"";
+    userCityName = self.passCity;
+    userCityName = [userCityName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    self.name.text = userCityName;
+     NSLog(@"Полученный на основную форму %@",self.name.text);
     [super viewDidLoad];
     [self search];
     

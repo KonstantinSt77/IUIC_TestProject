@@ -96,10 +96,14 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     
     NSString *userCityName = textField.text;
     userCityName = [userCityName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
+     // userCityName = [userCityName stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    //userCityName = [userCityName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    self.city = @"";
     self.city = userCityName;
     
-    NSLog(@"Выбранный и отправленный = %@",self.city);
+  
+    
+    NSLog(@"Отправленный из StartVC= %@",self.city);
     
     [self performSegueWithIdentifier:@"start1" sender:self.city];
     

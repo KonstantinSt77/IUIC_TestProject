@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B1C5F4E1C26A3DB00BE5854"
-               BuildableName = "Simple Weather.app"
-               BlueprintName = "Simple Weather"
-               ReferencedContainer = "container:Simple Weather.xcodeproj">
+               BuildableName = "IUIC Weather.app"
+               BlueprintName = "IUIC Weather"
+               ReferencedContainer = "container:IUIC Weather.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B1C5F671C26A3DB00BE5854"
-               BuildableName = "Simple WeatherTests.xctest"
-               BlueprintName = "Simple WeatherTests"
-               ReferencedContainer = "container:Simple Weather.xcodeproj">
+               BuildableName = "IUIC Weather.xctest"
+               BlueprintName = "IUIC WeatherTests"
+               ReferencedContainer = "container:IUIC Weather.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8B1C5F721C26A3DB00BE5854"
-               BuildableName = "Simple WeatherUITests.xctest"
-               BlueprintName = "Simple WeatherUITests"
-               ReferencedContainer = "container:Simple Weather.xcodeproj">
+               BuildableName = "IUIC Weather.xctest"
+               BlueprintName = "IUIC WeatherUITests"
+               ReferencedContainer = "container:IUIC Weather.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B1C5F4E1C26A3DB00BE5854"
-            BuildableName = "Simple Weather.app"
-            BlueprintName = "Simple Weather"
-            ReferencedContainer = "container:Simple Weather.xcodeproj">
+            BuildableName = "IUIC Weather.app"
+            BlueprintName = "IUIC Weather"
+            ReferencedContainer = "container:IUIC Weather.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,17 +76,12 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B1C5F4E1C26A3DB00BE5854"
-            BuildableName = "Simple Weather.app"
-            BlueprintName = "Simple Weather"
-            ReferencedContainer = "container:Simple Weather.xcodeproj">
+            BuildableName = "IUIC Weather.app"
+            BlueprintName = "IUIC Weather"
+            ReferencedContainer = "container:IUIC Weather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -100,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8B1C5F4E1C26A3DB00BE5854"
-            BuildableName = "Simple Weather.app"
-            BlueprintName = "Simple Weather"
-            ReferencedContainer = "container:Simple Weather.xcodeproj">
+            BuildableName = "IUIC Weather.app"
+            BlueprintName = "IUIC Weather"
+            ReferencedContainer = "container:IUIC Weather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

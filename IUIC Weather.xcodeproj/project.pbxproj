@@ -11,8 +11,6 @@
 		5C4C41E41C6131ED00CAB4EF /* SWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4C41E31C6131ED00CAB4EF /* SWMapViewController.m */; };
 		7143B62684A31BB230B19119 /* libPods-Simple Weather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A713A07BDD72A0EA6CE06E70 /* libPods-Simple Weather.a */; };
 		89F587CA9B8E595F44996EA1 /* libPods-Simple WeatherUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 835674CDDCA596D1F94491C0 /* libPods-Simple WeatherUITests.a */; };
-		8B0ADFE91EE74B3200EC642C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0ADFE81EE74B3200EC642C /* Reachability.m */; };
-		8B0ADFEB1EE74B3D00EC642C /* countriesToCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B0ADFEA1EE74B3D00EC642C /* countriesToCities.json */; };
 		8B1C5F541C26A3DB00BE5854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F531C26A3DB00BE5854 /* main.m */; };
 		8B1C5F571C26A3DB00BE5854 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F561C26A3DB00BE5854 /* AppDelegate.m */; };
 		8B1C5F5A1C26A3DB00BE5854 /* SWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F591C26A3DB00BE5854 /* SWMainViewController.m */; };
@@ -23,6 +21,8 @@
 		8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1031EE5CF5300469A1C /* SWViewController.m */; };
 		8B554CCD1C68EF4A0009CC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */; };
 		8B554CCE1C68EF4A0009CC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CCB1C68EF4A0009CC67 /* Main.storyboard */; };
+		8BBA239A1EE89325001B893B /* countriesToCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA23971EE89325001B893B /* countriesToCities.json */; };
+		8BBA239B1EE89325001B893B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBA23991EE89325001B893B /* Reachability.m */; };
 		DE1F8873B4D3B0D86BC86FA6 /* libPods-Simple WeatherTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38322BCD694B6FBB55650D99 /* libPods-Simple WeatherTests.a */; };
 /* End PBXBuildFile section */
 
@@ -53,10 +53,7 @@
 		5C4C41E21C6131ED00CAB4EF /* SWMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMapViewController.h; sourceTree = "<group>"; };
 		5C4C41E31C6131ED00CAB4EF /* SWMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMapViewController.m; sourceTree = "<group>"; };
 		835674CDDCA596D1F94491C0 /* libPods-Simple WeatherUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple WeatherUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B0ADFE71EE74B3200EC642C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = SOURCE_ROOT; };
-		8B0ADFE81EE74B3200EC642C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = SOURCE_ROOT; };
-		8B0ADFEA1EE74B3D00EC642C /* countriesToCities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countriesToCities.json; sourceTree = SOURCE_ROOT; };
-		8B1C5F4F1C26A3DB00BE5854 /* Simple Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1C5F4F1C26A3DB00BE5854 /* IUIC Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IUIC Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1C5F531C26A3DB00BE5854 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B1C5F551C26A3DB00BE5854 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B1C5F561C26A3DB00BE5854 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,10 +61,10 @@
 		8B1C5F591C26A3DB00BE5854 /* SWMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWMainViewController.m; sourceTree = "<group>"; };
 		8B1C5F5E1C26A3DB00BE5854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1C5F631C26A3DB00BE5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B1C5F681C26A3DB00BE5854 /* Simple WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1C5F681C26A3DB00BE5854 /* IUIC Weather.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IUIC Weather.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1C5F6C1C26A3DB00BE5854 /* Simple_WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_WeatherTests.m; sourceTree = "<group>"; };
 		8B1C5F6E1C26A3DB00BE5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B1C5F731C26A3DB00BE5854 /* Simple WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1C5F731C26A3DB00BE5854 /* IUIC Weather.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IUIC Weather.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1C5F771C26A3DB00BE5854 /* Simple_WeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_WeatherUITests.m; sourceTree = "<group>"; };
 		8B1C5F791C26A3DB00BE5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewController.h; sourceTree = "<group>"; };
@@ -76,6 +73,9 @@
 		8B2FA1031EE5CF5300469A1C /* SWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
 		8B554CCA1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		8B554CCC1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		8BBA23971EE89325001B893B /* countriesToCities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countriesToCities.json; sourceTree = "<group>"; };
+		8BBA23981EE89325001B893B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8BBA23991EE89325001B893B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		99C7DB8D5B070CD101DEA993 /* Pods-Simple WeatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple WeatherUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple WeatherUITests/Pods-Simple WeatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A713A07BDD72A0EA6CE06E70 /* libPods-Simple Weather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Simple Weather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEDCEEA65607095847D88F0 /* Pods-Simple Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Weather/Pods-Simple Weather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4C41E01C61313B00CAB4EF /* MapKit.framework */,
-				8B1C5F511C26A3DB00BE5854 /* Simple Weather */,
+				8B1C5F511C26A3DB00BE5854 /* IUIC Weather */,
 				8B1C5F6B1C26A3DB00BE5854 /* Simple WeatherTests */,
 				8B1C5F761C26A3DB00BE5854 /* Simple WeatherUITests */,
 				8B1C5F501C26A3DB00BE5854 /* Products */,
@@ -150,14 +150,14 @@
 		8B1C5F501C26A3DB00BE5854 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B1C5F4F1C26A3DB00BE5854 /* Simple Weather.app */,
-				8B1C5F681C26A3DB00BE5854 /* Simple WeatherTests.xctest */,
-				8B1C5F731C26A3DB00BE5854 /* Simple WeatherUITests.xctest */,
+				8B1C5F4F1C26A3DB00BE5854 /* IUIC Weather.app */,
+				8B1C5F681C26A3DB00BE5854 /* IUIC Weather.xctest */,
+				8B1C5F731C26A3DB00BE5854 /* IUIC Weather.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B1C5F511C26A3DB00BE5854 /* Simple Weather */ = {
+		8B1C5F511C26A3DB00BE5854 /* IUIC Weather */ = {
 			isa = PBXGroup;
 			children = (
 				8B2FA10A1EE5DC7B00469A1C /* StartVC */,
@@ -168,15 +168,16 @@
 				8B2FA10C1EE5DCAD00469A1C /* StandartFile */,
 				8B1C5F521C26A3DB00BE5854 /* Supporting Files */,
 			);
+			name = "IUIC Weather";
 			path = "Simple Weather";
 			sourceTree = "<group>";
 		};
 		8B1C5F521C26A3DB00BE5854 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8B0ADFEA1EE74B3D00EC642C /* countriesToCities.json */,
-				8B0ADFE71EE74B3200EC642C /* Reachability.h */,
-				8B0ADFE81EE74B3200EC642C /* Reachability.m */,
+				8BBA23971EE89325001B893B /* countriesToCities.json */,
+				8BBA23981EE89325001B893B /* Reachability.h */,
+				8BBA23991EE89325001B893B /* Reachability.m */,
 				8B1C5F531C26A3DB00BE5854 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -251,9 +252,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B1C5F4E1C26A3DB00BE5854 /* Simple Weather */ = {
+		8B1C5F4E1C26A3DB00BE5854 /* IUIC Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B1C5F7C1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple Weather" */;
+			buildConfigurationList = 8B1C5F7C1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC Weather" */;
 			buildPhases = (
 				5A35DE5716FC5C9A9205AD81 /* [CP] Check Pods Manifest.lock */,
 				8B1C5F4B1C26A3DB00BE5854 /* Sources */,
@@ -266,14 +267,14 @@
 			);
 			dependencies = (
 			);
-			name = "Simple Weather";
+			name = "IUIC Weather";
 			productName = "Simple Weather";
-			productReference = 8B1C5F4F1C26A3DB00BE5854 /* Simple Weather.app */;
+			productReference = 8B1C5F4F1C26A3DB00BE5854 /* IUIC Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B1C5F671C26A3DB00BE5854 /* Simple WeatherTests */ = {
+		8B1C5F671C26A3DB00BE5854 /* IUIC WeatherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B1C5F7F1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple WeatherTests" */;
+			buildConfigurationList = 8B1C5F7F1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC WeatherTests" */;
 			buildPhases = (
 				69BF4E22678980A65686BC31 /* [CP] Check Pods Manifest.lock */,
 				8B1C5F641C26A3DB00BE5854 /* Sources */,
@@ -287,14 +288,14 @@
 			dependencies = (
 				8B1C5F6A1C26A3DB00BE5854 /* PBXTargetDependency */,
 			);
-			name = "Simple WeatherTests";
+			name = "IUIC WeatherTests";
 			productName = "Simple WeatherTests";
-			productReference = 8B1C5F681C26A3DB00BE5854 /* Simple WeatherTests.xctest */;
+			productReference = 8B1C5F681C26A3DB00BE5854 /* IUIC Weather.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8B1C5F721C26A3DB00BE5854 /* Simple WeatherUITests */ = {
+		8B1C5F721C26A3DB00BE5854 /* IUIC WeatherUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B1C5F821C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple WeatherUITests" */;
+			buildConfigurationList = 8B1C5F821C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC WeatherUITests" */;
 			buildPhases = (
 				43CE04A18D9E75AD9C3254C9 /* [CP] Check Pods Manifest.lock */,
 				8B1C5F6F1C26A3DB00BE5854 /* Sources */,
@@ -308,9 +309,9 @@
 			dependencies = (
 				8B1C5F751C26A3DB00BE5854 /* PBXTargetDependency */,
 			);
-			name = "Simple WeatherUITests";
+			name = "IUIC WeatherUITests";
 			productName = "Simple WeatherUITests";
-			productReference = 8B1C5F731C26A3DB00BE5854 /* Simple WeatherUITests.xctest */;
+			productReference = 8B1C5F731C26A3DB00BE5854 /* IUIC Weather.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +340,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B1C5F4A1C26A3DB00BE5854 /* Build configuration list for PBXProject "Simple Weather" */;
+			buildConfigurationList = 8B1C5F4A1C26A3DB00BE5854 /* Build configuration list for PBXProject "IUIC Weather" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -352,9 +353,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B1C5F4E1C26A3DB00BE5854 /* Simple Weather */,
-				8B1C5F671C26A3DB00BE5854 /* Simple WeatherTests */,
-				8B1C5F721C26A3DB00BE5854 /* Simple WeatherUITests */,
+				8B1C5F4E1C26A3DB00BE5854 /* IUIC Weather */,
+				8B1C5F671C26A3DB00BE5854 /* IUIC WeatherTests */,
+				8B1C5F721C26A3DB00BE5854 /* IUIC WeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,7 +367,7 @@
 			files = (
 				8B554CCE1C68EF4A0009CC67 /* Main.storyboard in Resources */,
 				8B1C5F5F1C26A3DB00BE5854 /* Assets.xcassets in Resources */,
-				8B0ADFEB1EE74B3D00EC642C /* countriesToCities.json in Resources */,
+				8BBA239A1EE89325001B893B /* countriesToCities.json in Resources */,
 				8B554CCD1C68EF4A0009CC67 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +534,7 @@
 				8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */,
 				8B1C5F5A1C26A3DB00BE5854 /* SWMainViewController.m in Sources */,
 				8B1C5F571C26A3DB00BE5854 /* AppDelegate.m in Sources */,
-				8B0ADFE91EE74B3200EC642C /* Reachability.m in Sources */,
+				8BBA239B1EE89325001B893B /* Reachability.m in Sources */,
 				8B2FA1011EE5CEC800469A1C /* SWTableViewController.m in Sources */,
 				8B1C5F541C26A3DB00BE5854 /* main.m in Sources */,
 				5C4C41E41C6131ED00CAB4EF /* SWMapViewController.m in Sources */,
@@ -561,12 +562,12 @@
 /* Begin PBXTargetDependency section */
 		8B1C5F6A1C26A3DB00BE5854 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B1C5F4E1C26A3DB00BE5854 /* Simple Weather */;
+			target = 8B1C5F4E1C26A3DB00BE5854 /* IUIC Weather */;
 			targetProxy = 8B1C5F691C26A3DB00BE5854 /* PBXContainerItemProxy */;
 		};
 		8B1C5F751C26A3DB00BE5854 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B1C5F4E1C26A3DB00BE5854 /* Simple Weather */;
+			target = 8B1C5F4E1C26A3DB00BE5854 /* IUIC Weather */;
 			targetProxy = 8B1C5F741C26A3DB00BE5854 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -683,7 +684,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-Weather";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IUIC Weather";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -698,7 +699,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-Weather";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IUIC Weather";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -711,8 +712,8 @@
 				INFOPLIST_FILE = "Simple WeatherTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-WeatherTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Weather.app/Simple Weather";
+				PRODUCT_NAME = "IUIC Weather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IUIC Weather.app/IUIC Weather";
 			};
 			name = Debug;
 		};
@@ -724,8 +725,8 @@
 				INFOPLIST_FILE = "Simple WeatherTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-WeatherTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Weather.app/Simple Weather";
+				PRODUCT_NAME = "IUIC Weather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IUIC Weather.app/IUIC Weather";
 			};
 			name = Release;
 		};
@@ -736,7 +737,7 @@
 				INFOPLIST_FILE = "Simple WeatherUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-WeatherUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IUIC Weather";
 				TEST_TARGET_NAME = "Simple Weather";
 				USES_XCTRUNNER = YES;
 			};
@@ -749,7 +750,7 @@
 				INFOPLIST_FILE = "Simple WeatherUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SKS.Simple-WeatherUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "IUIC Weather";
 				TEST_TARGET_NAME = "Simple Weather";
 				USES_XCTRUNNER = YES;
 			};
@@ -758,7 +759,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B1C5F4A1C26A3DB00BE5854 /* Build configuration list for PBXProject "Simple Weather" */ = {
+		8B1C5F4A1C26A3DB00BE5854 /* Build configuration list for PBXProject "IUIC Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B1C5F7A1C26A3DB00BE5854 /* Debug */,
@@ -767,7 +768,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B1C5F7C1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple Weather" */ = {
+		8B1C5F7C1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B1C5F7D1C26A3DB00BE5854 /* Debug */,
@@ -776,7 +777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B1C5F7F1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple WeatherTests" */ = {
+		8B1C5F7F1C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC WeatherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B1C5F801C26A3DB00BE5854 /* Debug */,
@@ -785,7 +786,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B1C5F821C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "Simple WeatherUITests" */ = {
+		8B1C5F821C26A3DB00BE5854 /* Build configuration list for PBXNativeTarget "IUIC WeatherUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B1C5F831C26A3DB00BE5854 /* Debug */,
