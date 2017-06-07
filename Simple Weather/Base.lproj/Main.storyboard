@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qle-LE-RTw">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -406,7 +405,7 @@
         <!--Список городов-->
         <scene sceneID="DTl-Lw-0eS">
             <objects>
-                <tableViewController id="bHE-y2-DVD" customClass="SWTableViewController" sceneMemberID="viewController">
+                <tableViewController id="bHE-y2-DVD" customClass="IUICTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="L6T-fo-gcM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,7 +437,7 @@
         <!--Выбор региона-->
         <scene sceneID="mii-Qf-sdN">
             <objects>
-                <viewController id="ANj-r9-9pm" customClass="SWViewController" sceneMemberID="viewController">
+                <viewController id="ANj-r9-9pm" customClass="IUICViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cET-vc-sMB"/>
                         <viewControllerLayoutGuide type="bottom" id="bJH-DV-A6H"/>

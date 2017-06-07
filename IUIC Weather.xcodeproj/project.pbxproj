@@ -17,8 +17,8 @@
 		8B1C5F5F1C26A3DB00BE5854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1C5F5E1C26A3DB00BE5854 /* Assets.xcassets */; };
 		8B1C5F6D1C26A3DB00BE5854 /* Simple_WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F6C1C26A3DB00BE5854 /* Simple_WeatherTests.m */; };
 		8B1C5F781C26A3DB00BE5854 /* Simple_WeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1C5F771C26A3DB00BE5854 /* Simple_WeatherUITests.m */; };
-		8B2FA1011EE5CEC800469A1C /* SWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */; };
-		8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1031EE5CF5300469A1C /* SWViewController.m */; };
+		8B2FA1011EE5CEC800469A1C /* IUICTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1001EE5CEC800469A1C /* IUICTableViewController.m */; };
+		8B2FA1041EE5CF5300469A1C /* IUICViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2FA1031EE5CF5300469A1C /* IUICViewController.m */; };
 		8B554CCD1C68EF4A0009CC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CC91C68EF4A0009CC67 /* LaunchScreen.storyboard */; };
 		8B554CCE1C68EF4A0009CC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B554CCB1C68EF4A0009CC67 /* Main.storyboard */; };
 		8BBA239A1EE89325001B893B /* countriesToCities.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BBA23971EE89325001B893B /* countriesToCities.json */; };
@@ -67,10 +67,10 @@
 		8B1C5F731C26A3DB00BE5854 /* IUIC Weather.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IUIC Weather.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1C5F771C26A3DB00BE5854 /* Simple_WeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_WeatherUITests.m; sourceTree = "<group>"; };
 		8B1C5F791C26A3DB00BE5854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewController.h; sourceTree = "<group>"; };
-		8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewController.m; sourceTree = "<group>"; };
-		8B2FA1021EE5CF5300469A1C /* SWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWViewController.h; sourceTree = "<group>"; };
-		8B2FA1031EE5CF5300469A1C /* SWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWViewController.m; sourceTree = "<group>"; };
+		8B2FA0FF1EE5CEC800469A1C /* IUICTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUICTableViewController.h; sourceTree = "<group>"; };
+		8B2FA1001EE5CEC800469A1C /* IUICTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUICTableViewController.m; sourceTree = "<group>"; };
+		8B2FA1021EE5CF5300469A1C /* IUICViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IUICViewController.h; sourceTree = "<group>"; };
+		8B2FA1031EE5CF5300469A1C /* IUICViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IUICViewController.m; sourceTree = "<group>"; };
 		8B554CCA1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		8B554CCC1C68EF4A0009CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Simple Weather/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		8BBA23971EE89325001B893B /* countriesToCities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countriesToCities.json; sourceTree = "<group>"; };
@@ -160,10 +160,10 @@
 		8B1C5F511C26A3DB00BE5854 /* IUIC Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8B2FA10A1EE5DC7B00469A1C /* StartVC */,
-				8B719F5A1EE72FC2002AC529 /* TabelVC */,
-				8B2FA1091EE5DC4900469A1C /* WeatherVC */,
-				8B2FA10B1EE5DC9700469A1C /* MapVC */,
+				8B2FA10A1EE5DC7B00469A1C /* IUICStartVC */,
+				8B719F5A1EE72FC2002AC529 /* IUICTabelVC */,
+				8B2FA1091EE5DC4900469A1C /* IUICWeatherVC */,
+				8B2FA10B1EE5DC9700469A1C /* IUICMapVC */,
 				8B1C5F5E1C26A3DB00BE5854 /* Assets.xcassets */,
 				8B2FA10C1EE5DCAD00469A1C /* StandartFile */,
 				8B1C5F521C26A3DB00BE5854 /* Supporting Files */,
@@ -201,31 +201,31 @@
 			path = "Simple WeatherUITests";
 			sourceTree = "<group>";
 		};
-		8B2FA1091EE5DC4900469A1C /* WeatherVC */ = {
+		8B2FA1091EE5DC4900469A1C /* IUICWeatherVC */ = {
 			isa = PBXGroup;
 			children = (
 				8B1C5F581C26A3DB00BE5854 /* SWMainViewController.h */,
 				8B1C5F591C26A3DB00BE5854 /* SWMainViewController.m */,
 			);
-			name = WeatherVC;
+			name = IUICWeatherVC;
 			sourceTree = "<group>";
 		};
-		8B2FA10A1EE5DC7B00469A1C /* StartVC */ = {
+		8B2FA10A1EE5DC7B00469A1C /* IUICStartVC */ = {
 			isa = PBXGroup;
 			children = (
-				8B2FA1021EE5CF5300469A1C /* SWViewController.h */,
-				8B2FA1031EE5CF5300469A1C /* SWViewController.m */,
+				8B2FA1021EE5CF5300469A1C /* IUICViewController.h */,
+				8B2FA1031EE5CF5300469A1C /* IUICViewController.m */,
 			);
-			name = StartVC;
+			name = IUICStartVC;
 			sourceTree = "<group>";
 		};
-		8B2FA10B1EE5DC9700469A1C /* MapVC */ = {
+		8B2FA10B1EE5DC9700469A1C /* IUICMapVC */ = {
 			isa = PBXGroup;
 			children = (
 				5C4C41E21C6131ED00CAB4EF /* SWMapViewController.h */,
 				5C4C41E31C6131ED00CAB4EF /* SWMapViewController.m */,
 			);
-			name = MapVC;
+			name = IUICMapVC;
 			sourceTree = "<group>";
 		};
 		8B2FA10C1EE5DCAD00469A1C /* StandartFile */ = {
@@ -240,13 +240,13 @@
 			name = StandartFile;
 			sourceTree = "<group>";
 		};
-		8B719F5A1EE72FC2002AC529 /* TabelVC */ = {
+		8B719F5A1EE72FC2002AC529 /* IUICTabelVC */ = {
 			isa = PBXGroup;
 			children = (
-				8B2FA0FF1EE5CEC800469A1C /* SWTableViewController.h */,
-				8B2FA1001EE5CEC800469A1C /* SWTableViewController.m */,
+				8B2FA0FF1EE5CEC800469A1C /* IUICTableViewController.h */,
+				8B2FA1001EE5CEC800469A1C /* IUICTableViewController.m */,
 			);
-			name = TabelVC;
+			name = IUICTabelVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +320,7 @@
 		8B1C5F471C26A3DB00BE5854 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = SW;
+				CLASSPREFIX = IUIC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Stolyarenko K.S.";
 				TargetAttributes = {
@@ -531,11 +531,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B2FA1041EE5CF5300469A1C /* SWViewController.m in Sources */,
+				8B2FA1041EE5CF5300469A1C /* IUICViewController.m in Sources */,
 				8B1C5F5A1C26A3DB00BE5854 /* SWMainViewController.m in Sources */,
 				8B1C5F571C26A3DB00BE5854 /* AppDelegate.m in Sources */,
 				8BBA239B1EE89325001B893B /* Reachability.m in Sources */,
-				8B2FA1011EE5CEC800469A1C /* SWTableViewController.m in Sources */,
+				8B2FA1011EE5CEC800469A1C /* IUICTableViewController.m in Sources */,
 				8B1C5F541C26A3DB00BE5854 /* main.m in Sources */,
 				5C4C41E41C6131ED00CAB4EF /* SWMapViewController.m in Sources */,
 			);

@@ -6,13 +6,13 @@
 //  Copyright © 2017 Stolyarenko K.S. All rights reserved.
 //
 
-#import "SWViewController.h"
-#import "SWTableViewController.h"
+#import "IUICViewController.h"
+#import "IUICTableViewController.h"
 #import "SWMainViewController.h"
 #import "Reachability.h"
 static NSString *const countries = @"https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json";
 
-@interface SWViewController ()<UITextFieldDelegate>
+@interface IUICViewController ()<UITextFieldDelegate>
 @property (strong, nonatomic) NSMutableArray *myArray;
 @property (weak, nonatomic) IBOutlet UIPickerView *pik;
 @property (weak, nonatomic) NSString *stri;
@@ -22,7 +22,7 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
 @property Reachability* hostReachable;
 @end
 
-@implementation SWViewController
+@implementation IUICViewController
 
 
 - (void)viewDidLoad {
@@ -164,7 +164,7 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
 {
     if([[segue identifier] isEqualToString:@"start"])
     {
-        SWTableViewController *nextVC = [segue destinationViewController];
+        IUICTableViewController *nextVC = [segue destinationViewController];
         nextVC.passNumber = self.stri;
     }
     

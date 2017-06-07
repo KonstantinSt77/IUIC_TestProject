@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SWTableViewController : UITableViewController
+@interface IUICTableViewController : UITableViewController
 @property (strong, nonatomic) NSString *passNumber;
 @end

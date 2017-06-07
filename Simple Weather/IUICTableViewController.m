@@ -6,16 +6,16 @@
 //  Copyright © 2017 Stolyarenko K.S. All rights reserved.
 //
 
-#import "SWTableViewController.h"
+#import "IUICTableViewController.h"
 #import "SWMainViewController.h"
 
-@interface SWTableViewController ()
+@interface IUICTableViewController ()
 @property (strong, nonatomic) NSMutableArray *myArray2;
 @property (strong, nonatomic) NSString *myString;
 @property (weak, nonatomic) NSString *CityName;
 @end
 
-@implementation SWTableViewController
+@implementation IUICTableViewController
 
 - (void)viewDidLoad
 {

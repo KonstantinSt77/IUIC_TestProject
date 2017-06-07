@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SWViewController : UIViewController
+@interface IUICViewController : UIViewController
 -(void) checkNetworkStatus:(NSNotification *)notice;
 @end
