@@ -20,12 +20,12 @@
 * **Обрыв связи во время выполнения запроса;**
 * **Предоставление информации о типе подключения к сети;**
 
-**Был разработан User-friendly интерфейс**
+**Был разработан User-friendly интерфейс.**
 
 ![alt text](https://raw.githubusercontent.com/KonstantinSt77/IUIC_TestProject/master/Simple%20Weather/Designe.png)
 ![alt text](https://raw.githubusercontent.com/KonstantinSt77/IUIC_TestProject/master/Simple%20Weather/Designe%202.png)
 
-**Срок выполнения задания включая разработку и отрисовку дизайна и моделей, создания и написание основных классов и всего проекта вцелом: **2 дня****
+**Срок выполнения задания включая разработку и отрисовку дизайна и моделей, создание и написание основных классов и всего проекта вцелом: 2 дня.**
 
 **Yours sincerely K.S.**
 
