@@ -30,7 +30,7 @@
     }
     
     annView.canShowCallout = YES;
-    UIImage *image = [UIImage imageNamed:@"Bsun-1"];
+    UIImage *image = [UIImage imageNamed:self.imageName];
     annView.image = image;
     [annView setFrame:CGRectMake(0, 0, 50, 50)];
     annView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];

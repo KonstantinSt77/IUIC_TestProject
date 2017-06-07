@@ -53,6 +53,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         SWMapViewController *mapVC = [segue destinationViewController];
         mapVC.mapPassCity = self.passCityWithTemperature;
         mapVC.mapCoordinateForCity = self.ServerMapCoordinateForCity;
+        mapVC.imageName = self.mainImageName;
     }
     else
     {
@@ -175,6 +176,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.snow.hidden = YES;
             self.rain.hidden = YES;
             self.drizzle.hidden = YES;
+            self.mainImageName = @"Bclouds-1";
         }
         else if ([weatherstatusString isEqualToString:@"Sun"]||[weatherstatusString isEqualToString:@"Clear"])
         {
@@ -184,6 +186,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.snow.hidden = YES;
             self.rain.hidden = YES;
             self.drizzle.hidden = YES;
+            self.mainImageName = @"Bsun-1";
         }
         else if ([weatherstatusString isEqualToString:@"Rain"])
         {
@@ -193,6 +196,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.fog.hidden = YES;
             self.snow.hidden = YES;
             self.drizzle.hidden = YES;
+            self.mainImageName = @"Brain-1";
         }
         else if ([weatherstatusString isEqualToString:@"Snow"])
         {
@@ -202,6 +206,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.fog.hidden = YES;
             self.rain.hidden = YES;
             self.drizzle.hidden = YES;
+            self.mainImageName = @"Bsnow-1";
         }
         else if ([weatherstatusString isEqualToString:@"Fog"])
         {
@@ -211,6 +216,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.snow.hidden = YES;
             self.rain.hidden = YES;
             self.drizzle.hidden = YES;
+            self.mainImageName = @"BFOG-1";
         }
         else if ([weatherstatusString isEqualToString:@"Drizzle"])
         {
@@ -220,6 +226,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.snow.hidden = YES;
             self.rain.hidden = YES;
             self.drizzle.hidden = NO;
+            self.mainImageName = @"Bdrizzle-1";
         }
     });
 }

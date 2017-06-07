@@ -360,7 +360,7 @@
             </objects>
             <point key="canvasLocation" x="255" y="983"/>
         </scene>
-        <!--Choose Your City-->
+        <!--Карта погоды-->
         <scene sceneID="UQV-fN-pNP">
             <objects>
                 <viewController id="TWg-bi-SP0" customClass="SWMapViewController" sceneMemberID="viewController">
@@ -389,7 +389,7 @@
                             <constraint firstAttribute="trailing" secondItem="UKI-Wj-NRe" secondAttribute="trailing" id="vIB-0I-o7f"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Choose Your City" id="tom-FF-pUy"/>
+                    <navigationItem key="navigationItem" title="Карта погоды" id="tom-FF-pUy"/>
                     <connections>
                         <outlet property="mapView" destination="UKI-Wj-NRe" id="1RW-TZ-GYG"/>
                     </connections>

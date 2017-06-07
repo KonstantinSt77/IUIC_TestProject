@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 @interface SWMainViewController : UIViewController
 @property (strong, nonatomic) NSString *passCity;
+@property (strong, nonatomic) NSString *mainImageName;
 @property (nonatomic, assign) CLLocationCoordinate2D ServerMapCoordinateForCity;
 @end
 
