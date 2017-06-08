@@ -78,7 +78,7 @@
   
     
     NSString *userCityName = [self.myArray2 objectAtIndex:indexPath.row];
-    userCityName = [userCityName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    userCityName = [userCityName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     self.CityName = userCityName;
     
     NSLog(@"Выбранный и отправленный через таблицу= %@",userCityName);

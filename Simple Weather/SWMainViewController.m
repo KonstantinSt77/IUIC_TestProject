@@ -59,10 +59,15 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         mapVC.mapPassCity = self.passCityWithTemperature;
         mapVC.mapCoordinateForCity = self.ServerMapCoordinateForCity;
         mapVC.imageName = self.mainImageName;
+
+        
+        
+        NSLog(@"координаты на отправление lat = %f lon = %f",self.ServerMapCoordinateForCity.latitude,self.ServerMapCoordinateForCity.longitude);
     }
     else
     {
         [segue.destinationViewController setDelegate:self];
+        
     }
     
 }
@@ -126,8 +131,12 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         NSString *coordLatString = coordDictionary[@"lat"];
         NSString *coordLonString = coordDictionary[@"lon"];
         
-        NSInteger coordLon = [coordLonString intValue];
-        NSInteger coordLat = [coordLatString intValue];
+        NSLog(@"координаты от сервера в строке lat = %@ lon = %@",coordLatString,coordLonString);
+        
+        double coordLon = [coordLonString doubleValue];
+        double coordLat = [coordLatString doubleValue];
+        
+        NSLog(@"координаты от сервера в инте lat = %ld lon = %ld",(long)coordLat,(long)coordLon);
         
         CLLocationCoordinate2D a;
         a.longitude = coordLon;
@@ -232,6 +241,16 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
             self.rain.hidden = YES;
             self.drizzle.hidden = NO;
             self.mainImageName = @"Bdrizzle-1";
+        }
+        else
+        {
+            self.clouds.hidden = NO;
+            self.sun.hidden = YES;
+            self.fog.hidden = YES;
+            self.snow.hidden = YES;
+            self.rain.hidden = YES;
+            self.drizzle.hidden = YES;
+            self.mainImageName = @"Bclouds-1";
         }
     });
 }
