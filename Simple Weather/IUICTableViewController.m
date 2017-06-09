@@ -23,16 +23,12 @@
     [super viewDidLoad];
     [self doSomethingWithTheJson];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
-    
 }
 
 - (void)doSomethingWithTheJson
 {
-    
     NSDictionary *dict = [self JSONFromFile];
-     self.myArray2 = [[dict objectForKey:self.passNumber] mutableCopy];
-    //self.myArray2 = [dict objectForKey:self.passNumber];
-    
+    self.myArray2 = [[dict objectForKey:self.passNumber] mutableCopy];
 }
 
 - (NSDictionary *)JSONFromFile
@@ -56,33 +52,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    
-    //Поиск ячейки
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    //Если ячейка не найдена
     if (cell == nil) {
-        //Создание ячейки
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:CellIdentifier];
     }
-    
     cell.textLabel.text = [self.myArray2 objectAtIndex:indexPath.row];
-    
     return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  
-    
     NSString *userCityName = [self.myArray2 objectAtIndex:indexPath.row];
     userCityName = [userCityName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     self.CityName = userCityName;
-    
     NSLog(@"Выбранный и отправленный через таблицу= %@",userCityName);
-    
     [self performSegueWithIdentifier:@"start2" sender:userCityName];
 }
 
@@ -93,8 +78,6 @@
         SWMainViewController *nextVC1 = [segue destinationViewController];
         nextVC1.passCity = self.CityName ;
     }
-    
-    
 }
 
 
@@ -104,9 +87,6 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        //remove the deleted object from your data source.
-        //If your data source is an NSMutableArray, do this
-        //[self.myArray2 removeObjectAtIndex:indexPath.row];
         [self.myArray2 removeObjectAtIndex:indexPath.row];
         [tableView reloadData]; // tell table to refresh now
     }

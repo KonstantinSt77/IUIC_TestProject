@@ -96,19 +96,10 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     
     NSString *userCityName = textField.text;
     userCityName = [userCityName stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-     // userCityName = [userCityName stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
-    //userCityName = [userCityName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     self.city = @"";
     self.city = userCityName;
-    
-  
-    
     NSLog(@"Отправленный из StartVC= %@",self.city);
-    
     [self performSegueWithIdentifier:@"start1" sender:self.city];
-    
-  
-    
     textField.text = nil;
     return YES;
 }
@@ -118,13 +109,10 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
 {
     
     NSDictionary *dict = [self JSONFromFile];
-    
     self.myArray = [NSMutableArray array];
-    
     for (NSString *countries in dict) {
         [self.myArray addObject:countries];
     }
-    
 }
 
 - (NSDictionary *)JSONFromFile
@@ -170,14 +158,9 @@ static NSString *const countries = @"https://raw.githubusercontent.com/David-Hai
     
     if([[segue identifier] isEqualToString:@"start1"])
     {
-    
         SWMainViewController *nextVC1 = [segue destinationViewController];
         nextVC1.passCity = self.city;
     }
-    
-    
 }
-
-
 
 @end

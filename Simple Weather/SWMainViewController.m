@@ -34,13 +34,11 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
 
 @implementation SWMainViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarHidden:YES
                                             withAnimation:UIStatusBarAnimationFade];
-    
-
-   
     NSString *userCityName = @"";
     userCityName = self.passCity;
     userCityName = [userCityName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -48,8 +46,7 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
      NSLog(@"Полученный на основную форму %@",self.name.text);
     [super viewDidLoad];
     [self search];
-    
-    }
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -59,33 +56,27 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         mapVC.mapPassCity = self.passCityWithTemperature;
         mapVC.mapCoordinateForCity = self.ServerMapCoordinateForCity;
         mapVC.imageName = self.mainImageName;
-
-        
-        
         NSLog(@"координаты на отправление lat = %f lon = %f",self.ServerMapCoordinateForCity.latitude,self.ServerMapCoordinateForCity.longitude);
     }
     else
     {
         [segue.destinationViewController setDelegate:self];
-        
     }
     
 }
 
-- (BOOL)prefersStatusBarHidden {
+- (BOOL)prefersStatusBarHidden
+{
     return YES;
 }
 
 -(void)search
 {
-    
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
-    
     NSString *urlString = [BasicUrl stringByAppendingString:WeatherCityNameUrl];
     urlString = [NSString stringWithFormat:urlString, self.passCity];
     NSURL *url = [NSURL URLWithString:urlString];
-
     [manager GET:url.absoluteString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSDictionary *json = responseObject;
     [self configurationScreenWithDictionary:json];
@@ -254,4 +245,5 @@ static NSString *const UserCityNameUrl1 = @"/data/2.5/weather?lat=%@&lon=%@&appi
         }
     });
 }
+
 @end
